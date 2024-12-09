@@ -5,8 +5,7 @@ body {
     font-weight: 100;
     color: #333;
     background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+    margin-left: 260px;
 }
 
 h1, h2, h3 {
@@ -298,11 +297,159 @@ body.dark-mode button:hover {
     color: #bb86fc; 
 }
 .mano-foto {
-    display: block;
-    margin: 20px auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%; 
+    border-radius: 50%; 
+    margin-bottom: 20px;
 }
 .dark-mode .stats-icon {
     border: 2px solid #bb86fc;
+}
+.header {
+    display: flex;
+    padding: 20px;
+    background-color: #0056b3;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100px;
+    height: auto;
+}
+.abb {
+    width: 100px;
+    height: auto;
+}
+.nav-bar {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.nav-bar a {
+   display: block;
+   color: white;
+   margin: 10px 0;
+   text-decoration: none;
+}
+.nav-bar:hover {
+    color: #1ef0ad;
+}
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 768px) { .sidebar { width: 100%; /* Full width on smaller screens */ height: auto; /* Allow height to adjust based on content */ position: relative; /* Make it stack with the content */ } .main-content { margin-left: 0; /* Remove left margin to allow full width content */ } }
+.dark-mode .sidebar p {
+    color: #bb86fc;
+}
+.nav-bar a:hover {
+    transform: scale(1.1);
+}
+.soc-medija i:hover{
+    transform: scale(1.5);
+}
+.profile-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+.soc-medija a {
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+.cover {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.cover-img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(50%)
+}
+.cover-text {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%); 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+.cover-text h1 {
+    font-size: 48px;
+    margin: 0;
+    color: white;
+}
+.cover-text p {
+    font-size: 24px;
+    margin: 10px 0 0;
+}
+.underline1 {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.underline2 {
+    position: relative;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.underline1::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 80px;
+    height: 3px;
+    background-color: #0056b3;
+}
+.underline2::after {
+    content: ''; 
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    bottom: 0; width: 60px; 
+    height: 2px; 
+    background-color: #1ef0ad; 
+}
+.dark-mode .underline1::after {
+    background-color: #bb86fc;
+}
+.dark-mode .underline2::after {
+    background-color: #74d54d;
+}
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99; 
+    border: none;
+    outline: none;
+    background-color: #0056b3;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#scrollToTopBtn:hover {
+    background-color: #1ef0ad;
+}
+.dark-mode #scrollToTopBtn {
+    background-color: #bb86fc;    
 }
