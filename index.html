@@ -6,132 +6,228 @@
         <meta charset="UTF-8">
         <meta name="description" content="Tai yra mano pirmasis portfolio.">
         
-
         <!--css failo nuoroda-->
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
     <body>
         <h1> Apie </h1>
         <p> Sveiki! Esu Eidvydas ir malonu Jus matyti (na, nors ir fiziškai ir nematau, bet matau dvasiškai) mano asmeniniame puslapyje. 
             Trumpai apie save - esu antro kurso elektros energetikos inžinerijos studentas, studijuojantis Vilnius Tech.
             Ateityje tikiuosi dirbti energetikos sektoriuje, na, o jei konkrečiai tai matau save saulės, vėjo ar net vandenilio energetikoje.</p>
-        <img src="https://comenian.org/wp-content/uploads/2023/10/tom.jpeg" height = "300" width = "300" alt="Mano nuotrauka">
-            <p> Mano mėgstamiausia daina (įdomumo dėlei):</p>
-            <audio controls>
-                <source src="images/audio.mp3" type="audio/mpeg">
-            </audio>
-        <h2> Elektros Inžinerijos Studentas </h2>
-        <p> Sakyčiau, kad esu perspektyvus jaunuolis su nemažai ambicijų, užtikrintai ir ryžtingai sieksiantis kilti karjeros laiptais.</p>
-        <ul>
-                <li> Gimimo data: Rugsėjo 11, 2004 </li>
-                <li> Tinklalapis: https://www.studenciokas.lt </li>
-                <li> Telefono numeris: 0-655-65214</li>
-                <li> Miestas: Vilnius, Lietuva</li>
-                <li> Amžius: 20</li>
-                <li> Išsilavinimas / laipsnis: Vidurinis</li>
-                <li> El. Paštas: noriu.vasaros@gmail.com</li>
-                <li> Darbas laisvu laiku: Galimas</li>
-        </ul>
-        <p> Laisvu laiku teko dirbti su AutoCAD, KiCAD, Simulink programinėmis įrangomis.</p>
-        <ul>
-            <li>75 patenkinti klientai.
-            <li>87 įvykdyti projektai.
-            <li>856 atidirbtos valandos.
-        </ul>
+        <img src="https://comenian.org/wp-content/uploads/2023/10/tom.jpeg" height = "300" width = "300" alt="Mano nuotrauka" class="mano-foto">
+        
+        <div class="about-container">
+            <img src="images/tom-holland.jpeg" alt="Nuotrauka" class="foto">
+            <div class="about-content">
+                <h2>Elektros Inžinerijos Studentas</h2>
+                <p class="EiS">Sakyčiau, kad esu perspektyvus jaunuolis su nemažai ambicijų, užtikrintai ir ryžtingai sieksiantis kilti karjeros laiptais.</p>
+                <div class="row">
+                    <div class="col1">
+                        <ul class="Apie">
+                            <li class="Apie"><i class="fas fa-birthday-cake"></i>Gimimo data: Rugsėjo 11, 2004
+                            <li class="Apie"><i class="fas fa-globe"></i>Tinklalapis: <a href="url" class="link">https://www.studenciokas.lt</a>
+                            <li class="Apie"><i class="fas fa-phone"></i>Telefono numeris: <a href="url" class="numeris">0-655-65214</a>
+                            <li class="Apie"><i class="fas fa-city"></i>Miestas: <u class="miestas">Vilnius</u>, Lietuva
+                        </ul>
+                    </div>
+                    <div class="col2">
+                        <ul class="Apie">
+                            <li class="Apie"><i class="fas fa-user"></i>Amžius: 20</li>
+                            <li class="Apie"><i class="fas fa-graduation-cap"></i>Išsilavinimas / laipsnis: Vidurinis</li>
+                            <li class="Apie"><i class="fas fa-envelope"></i>El. Paštas: noriu.vasaros@gmail.com</li>
+                            <li class="Apie"><i class="fas fa-briefcase"></i>Darbas laisvu laiku: <u style="color: limegreen;">Galimas</u></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="EiS">Laisvu laiku teko dirbti su <b>AutoCAD</b>, <b>KiCAD</b>, <b>Simulink</b> programinėmis įrangomis.</p>
+            </div>
+        </div>
+        
+        <h2> Šiek tiek statistikos...</h2>
+        <div class="statistika">
+            <div class="stats">
+                <img src ="images/happy-clients.jpeg" alt = "Laimingi klientai" class ="stats-icon">
+                <h3> 75 patenkinti klientai</h3>
+                <p><b>Asmeniškai ir su kolegomis visada siekiu aukščiausios kokybės ir klientų pasitenkinimo.</b></p>
+            </div>
+            <div class="stats">
+                <img src="images/projects.png" alt="Projektai" class="stats-icon">
+                <h3> 87 įvykdyti projektai</h3>
+                <p><b>Sėkmingai įgyvendinti projektai skirtingose srityse.</b></p>
+            </div>
+            <div class="stats">
+                <img src="images/hours-support.jpeg" alt="Valandos" class="stats-icon">
+                <h3>856 atidirbtos valandos</h3>
+                <p><b>Techninė bei konsultacinė pagalba klientams.</b></p>
+            </div>
+        </div>
+        
         <h2> Įgūdžiai</h2>
-        <ul>
-            <li>HTML
-            <li>PHP
-            <li>CSS
-            <li>Python
-            <li>C++
-            <li>C
-            <li>MATLAB
-        </ul>
+        <div class="container">
+            <div class="įgūdis">
+                <span class="įgūdžio-pav">MATLAB</span>
+                <div class="bar-chart">
+                    <div class="progress-bar" style="width: 100%;"></div>
+                </div>
+            <span class="reikšmė">100%</span>
+        </div> <!--Bloko pabaiga-->
+
+            <div class="įgūdis">
+                <span class="įgūdžio-pav">C++</span>
+                <div class="bar-chart">
+                    <div class="progress-bar" style="width: 90%;"></div>
+                </div>
+            <span class="reikšmė">90%</span>
+        </div> <!--Bloko pabaiga-->
+
+            <div class="įgūdis">
+                <span class="įgūdžio-pav">HTML</span>
+                <div class="bar-chart">
+                    <div class="progress-bar" style="width: 85%;"></div>
+                </div>
+            <span class="reikšmė">85%</span>
+        </div> <!--Bloko pabaiga-->
+
+            <div class="įgūdis">
+                <span class="įgūdžio-pav">CSS</span>
+                <div class="bar-chart">
+                    <div class="progress-bar" style="width: 85%;"></div>
+                </div>
+            <span class="reikšmė">85%</span>
+        </div> <!--Bloko pabaiga-->
+
+            <div class="įgūdis">
+                <span class="įgūdžio-pav">C</span>
+                <div class="bar-chart">
+                    <div class="progress-bar" style="width: 70%;"></div>
+                </div>
+            <span class="reikšmė">70%</span>
+        </div> <!--Bloko pabaiga-->
+
+            <div class="įgūdis">
+                <span class="įgūdžio-pav">Python</span>
+                <div class="bar-chart">
+                    <div class="progress-bar" style="width: 65%;"></div>
+                </div>
+            <span class="reikšmė">65%</span>
+        </div> <!--Bloko pabaiga-->
+
+            <div class="įgūdis">
+                <span class="įgūdžio-pav">PHP</span>
+                <div class="bar-chart">
+                    <div class="progress-bar" style="width: 50%;"></div>
+                </div>
+            <span class="reikšmė">50%</span>
+        </div> <!--Bloko pabaiga-->
+        </div> <!--Pagrindinio konteinerio pabaiga-->
+
+
+        
         <h2> Reziumė </h2>
-        <h3> Eidvydas Jenkinas </h3>
-        <p> Aistrą inovacijoms turintis elektros inžinierius su 2-jų metų patirtimi dirbant energetikos rinkoje.</p>
-        <ul>
-            <li> Linksmoji g. 420, Vilnius, Lietuva
-            <li> 0-655-65214
-            <li> noriu.vasaros@gmail.com
-        </ul>
-        <h2> Išsilavinimas </h2>
-        <p> 2019 m. baigta Balsių progimnazija. Įgytas privalomasis pagrindinis išsilavinimas.</p>
-        <p> 2023 m. baigta Užupio gimnazija. Įgytas vidurinis išsilavinimas.</p>
-        <p> 2023 m. įstota į Vilnius Tech. Planuojamas bakalauro laipsnio įgyjimas 2027 m.</p>
-        <p> 2027 m. planuojamas stojimas į Vilnius Tech magistrantūros studijas.</p>
-        <h2> Profesionali patirtis </h2>
-        <h4> Jaunesnysis modeliuotojas</h4>
-        <p> 2024/05 - dabar</p>
-        <p> Vilnius, Lietuva</p>
-        <ul>
-            <li> Įvairus modeliavimas AutoCAD programine įranga
-            <li> Paprastų elektros tiekimo tinklų tikrinimas
-            <li> Darbas su KiCAD programine įranga
-        </ul>
-        <h4> Tinklapių dizaineris</h4>
-        <p> 2022 - dabar</p>
-        <p> Vilnius, Lietuva</p>
-        <ul>
-            <li> Buvo sukurta nemažai tinklapių, logotipų, reklamų
-            <li> Konsultavimas dėl dizaino idėjų
-            <li> Buvo patobulinta nemažai jau esamų tinklapių
-        </ul>
-        <h4> Saulės elektrinių įrengimo specialistas </h4>
-        <p> 2022 - 2023 </p>
-        <p> Lietuva</p>
-        <ul>
-            <li> Įrengimo patirtis visoje Lietuvoje
-            <li> Daugiausia aptarnautų klientų - Vilniuje, Kaune, Panevėžyje
-        </ul>
+        <div class="Container">
+            <div class="kairė-pusė">
+                <h2> Santrauka </h2>
+                <h4> Eidvydas Jenkinas </h4>
+                <p> Aistrą inovacijoms turintis elektros inžinierius su 2-jų metų patirtimi dirbant energetikos rinkoje.</p>
+                <ul>
+                    <li> Linksmoji g. 420, Vilnius, Lietuva
+                    <li> 0-655-65214
+                    <li> noriu.vasaros@gmail.com
+                </ul>
+                <h2> Išsilavinimas </h2>
+                <h4> PAGRINDINIS IŠSILAVINIMAS</h4>
+                    <p><b>2019 m.</b></p>
+                    <p><i>Baigta Vilniaus Balsių progimnazija. Įgytas privalomasis pagrindinis išsilavinimas.</i></p>
+                <h4> VIDURINIS IŠSILAVINIMAS</h4>
+                    <p><b>2023 m.</b></p>
+                    <p><i>Baigta Vilniaus Užupio gimnazija. Įgytas vidurinis išsilavinimas.</i></p>
+                <h4> AUKŠTASIS UNIVERSITETINIS IŠSILAVINIMAS: BAKALAURO STUDIJOS</h4>
+                    <p><b>2023 m.</b></p>
+                    <p><i>Įstota į Vilnius Tech. Planuojamas bakalauro laipsnio įgyjimas <b>2027 m.</b></i></p>
+                <h4> AUKŠTASIS UNIVERSITETINIS IŠSILAVINIMAS: MAGISTRANTŪROS STUDIJOS</h4>
+                    <p><b>2027 m.</b></p>
+                    <p><i>Planuojamas stojimas į Vilnius Tech magistrantūros studijas.</i></p>
+            </div>
+            <div class="dešinė-pusė">
+                <h2> Profesionali patirtis </h2>
+                <h4> JAUNESNYSIS MODELIUOTOJAS</h4>
+                    <p><b> 2024/05 - dabar</b></p>
+                    <p><i> Vilnius, Lietuva</i></p>
+                    <ul>
+                        <li> Įvairus modeliavimas AutoCAD programine įranga
+                        <li> Paprastų elektros tiekimo tinklų tikrinimas
+                        <li> Darbas su KiCAD programine įranga
+                    </ul>
+                <h4> TINKLAPIŲ DIZAINERIS</h4>
+                    <p><b> 2022 - dabar</b></p>
+                    <p><i> Vilnius, Lietuva</i></p>
+                    <ul>
+                        <li> Buvo sukurta nemažai tinklapių, logotipų, reklamų
+                        <li> Konsultavimas dėl dizaino idėjų
+                        <li> Buvo patobulinta nemažai jau esamų tinklapių
+                    </ul>
+                <h4> SAULĖS ELEKTRINIŲ ĮRENGIMO SPECIALISTAS </h4>
+                    <p><b> 2022 - 2023 </b></p>
+                    <p><i> Lietuva</i></p>
+                    <ul>
+                        <li> Įrengimo patirtis visoje Lietuvoje
+                        <li> Daugiausia aptarnautų klientų - Vilniuje, Kaune, Panevėžyje
+                    </ul>
+            </div>
+        </div>
+                    
         <h2> Atlikti darbai</h2>
-        <img src="images/solar-plant.jpg" height="400" width="500" alt="Saulės elektrinė">
-        <img src="images/online-shop.webp" height="400" width="500" alt="Internetinė parduotuvė">
-        <img src="images/logo.png" height="400" width="400" alt="Logotipas">
-        <img src="images/kicad.jpg" height="500" width="500" alt="KiCAD mini projektas">
-        <img src="images/designed-advert.png" height="500" width="500" alt="Reklama">
-        <img src="images/autocad.jpg" height="500" width="450" alt="AutoCAD mini projektas">
+        <div class="galerija">
+            <img src="images/solar-plant.jpg" alt="Saulės elektrinė">
+            <img src="images/online-shop.webp" alt="Internetinė parduotuvė">
+            <img src="images/logo.png" alt="Logotipas">
+            <img src="images/kicad.jpg" alt="KiCAD mini projektas">
+            <img src="images/designed-advert.png" alt="Reklama">
+            <img src="images/autocad.jpg" alt="AutoCAD mini projektas">
+        </div>
 
         <h2> Paslaugos</h2>
-        <ul>
-            <li>
-                <span><b> Elektronikos schemų projektavimas</b></span>
+        <div class="service-container">
+            <div class="service">
+                <i class="fas fa-microchip service-icon"></i>
+                <span class="pavadinimas"><b>Elektronikos schemų projektavimas</b></span>
                 <p> Teikiu nesudėtingų elektronikos schemų projaktavimo užklausų paslaugas. 
                     Daugiausia patirties turiu kuriant PCB plokštes su SMD ir Through hole komponentais.</p>
-            </li>
-            <li>
-                <span><b> Detalių pagal užsakymą projektavimas</b></span>
-                <p> Bet kokios pagal užklausą detalės projektavimas ir siuntimas gamybai.</p>
-            </li>
-            <li>
-                <span><b> Tinklalapio kūrimas</b></span>
-                <p> Teikiu bet kokio geidžiamo tinklalapio kūrimo paslaugas. Nuo paprasčiausių ir primityviausių iki labiausiai išpuoselėtų.</p>
-            </li>
-            <li>
-                <span><b> Reklamos ir logotipų kūrimas</b></span>
+            </div>
+            <div class="service">
+                <i class="fas fa-cogs service-icon"></i>
+                <span class="pavadinimas"><b>Detalių pagal užsakymą projektavimas</b></span>
+                <p>Bet kokios pagal užklausą detalės projektavimas ir siuntimas gamybai. </p>
+            </div>
+            <div class="service">
+                <i class="fas fa-globe service-icon"></i>
+                <span class="pavadinimas"><b>Tinklalapio kūrimas</b></span>
+                <p>Teikiu bet kokio geidžiamo tinklalapio kūrimo paslaugas. Nuo paprasčiausių ir primityviausių iki labiausiai išpuoselėtų. </p>
+            </div>
+            <div class="service">
+                <i class="fas fa-bullhorn service-icon"></i>
+                <span class="pavadinimas"><b>Reklamos ir logotipų kūrimas</b></span>
                 <p> Atsibodo ar paseno Jūsų darbartinis įmonės logotipas? Norėtumėte matyti šviežią, atnaujintą logotipą?
                     Su malonumu galiu pasisiūlyti sukurti naują Jums labiausiai tinkantį, visas ambicijas ir vertybes pabrėžiantį logotipą.</p>
                 <p> Trūksta marketingo? Nebėda - galiu pagelbėti su bet kokios reklamos kūrimu.</p>
-            </li>
-            <video width="650" height="650" controls style="display: block; margin: 0 auto;">
-                <source src="images/ELEKTRUM.mp4" type="video/mp4">
-            </video>
-            <li>
-                <span><b> Saulės elektrinių įrengimo Konsultavimas</b></span>
+            </div>
+            <div class="service">
+                <i class="fas fa-solar-panel service-icon"></i>
+                <span class="pavadinimas"><b>Saulės elektrinių įrengimo konsultavimas</b></span>
                 <p> Patirties turėjimas šiame sektoriuje leiždia man atsakyti visus Jums rūpimus klausimus, leidžia padėti apsispręsti
                     dėl investicijų į elektrinę bei leidžia man padėti Jums išsirinkti geriausią investicijos variantą.
                 </p>
-            </li>
-            <li>
-                <span><b> Saulės elektrinės įrengimas (tik pagal laisvą grafiką)</b></span>
+            </div>
+            <div class="service">
+                <i class="fas fa-tools service-icon"></i>
+                <span class="pavadinimas"><b>Saulės elektrinės įrengimas (tik pagal laisvą grafiką)</b></span>
                 <p> Laisvu man grafiku galiu pasiūlyti įrengti saulės elektrinę ant Jūsų stogo. 
                     Rekomendacija: iš anksto paskambinti aukščiau nurodytu numeriu ir suderinti datą.</p>
-            </li>
-        </ul>
-        <iframe width="560" height="315" controls style="display: block; margin: 0 auto;" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=jvhxm69fjWoZL7te" 
-        title="YouTube video player" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-        </iframe>
+            </div>
+        </div>
+        <div class="mygtukas">
+        <button id="toggle-button"> Tamsus režimas</button>
+        </div>
+        <script src="functions.js"></script>
     </body>
