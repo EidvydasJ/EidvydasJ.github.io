@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="lt">
+    <head>
+        <title> Kontaktai</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Kontaktinė informacija">
+        
+        <!--css failo nuoroda-->
+        <link rel="stylesheet" href="contacts.css">
+    </head>
+    <body>
+    <h2 id="kontaktai" class="underline1"> Kontaktai </h2>
+    <div class="contacts-container">
+        <p class="cont">Palikite kontaktus ir atsakykite į porą klausimų! :)</p>
+        <fieldset>
+            <legend>Kontaktinė info</legend>
+                <form id="contact-form">
+                    <p>
+                        <label>Vardas:</label>
+                        <input id="first-name-id" type="text" name="first-name" required/>
+                    </p>
+                    <p>
+                        <label>Pavardė:</label>
+                        <input id="last-name-id" type="text" name="last-name" required/>
+                    </p>
+                    <p>
+                        <label>El. paštas: </label>
+                        <input id="email-id" type="email" name="email" required/>
+                    </p>
+                    <p>
+                        <label>Tel. numeris: </label>
+                        <input id="phone-number-id" type="tel" name="phone-number" pattern="(\+370|8)-[0-9]{3}-[0-9]{5}" required/>
+                    </p>
+                    <p>
+                        <label>Adresas: </label><br>
+                        <textarea id="address-id" name="address" rows="5" cols="45" required></textarea>
+                    </p>
+            <fieldset>
+                <legend>Įvertinkite mūsų paslaugas:</legend>
+                    <p>Nuo 1 iki 10
+                        <p>1-labai prastai / visai nerekomenduočiau
+                        5-vidutiniškai / esu vidutinės nuomonės
+                        10-labai puikiai / tikrai rekomenduočiau</p>
+                    </p>
+                    <p>
+                        <label for="question-1">Kaip vertinate svetainės dizainą?</label>
+                        <input id="question-1" type="number" name="design-rating" min="1" max="10" required>
+                    </p>
+                    <p>
+                        <label for="question-2">Kaip vertinate svetainės naudojimo patogumą?</label>
+                        <input id="question-2" type="number" name="convenience-rating" min="1" max="10" required>
+                    </p>
+                    <p>
+                        <label for="question-3">Kaip įvertintumėte mūsų paslaugas?</label>
+                        <input id="question-3" type="number" name="services-rating" min="1" max="10" required>
+                    </p>
+                    <p>
+                        <label for="question-4">Kaip vertinate informacijos aiškumą?</label>
+                        <input id="question-4" type="number" name="info-rating" min="1" max="10" required>
+                    </p>
+                    <p>
+                        <label for="question-5">Ar rekomenduotumėte mus kitiems?</label>
+                        <input id="question-5" type="number" name="recommendation-rating" min="1" max="10" required>
+                    </p>
+            </fieldset>
+            <p>
+                <button id="submit-id">Pateikti</button>
+            </p>
+            <div id="result-container" style="margin-top: 20px; font-family: Arial, sans-serif;"></div>
+            </form>
+        </fieldset>
+    </div>
+    <script src="contacts.js"></script>
+</body>
+</html>

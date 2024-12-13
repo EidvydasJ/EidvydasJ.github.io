@@ -1,0 +1,18 @@
+h2 {
+    color: blue;
+    font-size: 40px;
+}
+button {
+    color: white;
+    font-weight: bold;
+    border: none;
+    background-color: #1aff22;
+    width: 240px;
+    padding: 8px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #37a73a;
+}
